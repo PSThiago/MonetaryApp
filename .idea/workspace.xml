@@ -168,7 +168,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660801255534</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Subindo o apk e os vídeos explicativos.">
+      <created>1660801626173</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660801626173</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Subindo o apk e os vídeos explicativos.">
+      <created>1660801666630</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660801666630</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
