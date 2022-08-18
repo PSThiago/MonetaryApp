@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Monetary</string>
+    <string name="currentQuote">Cotação Atual</string>
+    <string name="maximumQuote">Máxima do Dia</string>
+    <string name="minimumQuote">Mínima do Dia</string>
+    <string name="currencyName">Nome da Moeda</string>
+
+    <string name="flag">Bandeira da Moeda</string>
+
+    <string name="USD">USD</string>
+    <string name="EUR">EUR</string>
+    <string name="GBP">GBP</string>
+    <string name="JPY">JPY</string>
+    <string name="CHF">CHF</string>
+</resources>

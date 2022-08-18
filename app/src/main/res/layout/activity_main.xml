@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/flag"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/flag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        app:srcCompat="@drawable/united_states_of_america"
+        tools:srcCompat="@drawable/united_states_of_america" />
+
+    <ImageView
+        android:id="@+id/priceUp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/maximumQuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:srcCompat="@drawable/price_up"
+        tools:srcCompat="@drawable/price_up" />
+
+    <ImageView
+        android:id="@+id/price"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/currentQuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flag"
+        tools:srcCompat="@drawable/us_dollar" />
+
+    <TextView
+        android:id="@+id/currentQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/price"
+        app:layout_constraintTop_toBottomOf="@+id/currencyName"
+        tools:text="@string/currentQuote" />
+
+    <TextView
+        android:id="@+id/maximunQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/priceUp"
+        app:layout_constraintTop_toBottomOf="@+id/currentQuote"
+        tools:text="@string/maximumQuote" />
+
+    <TextView
+        android:id="@+id/minimunQuote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/priceDown"
+        app:layout_constraintTop_toBottomOf="@+id/maximunQuote"
+        tools:text="@string/minimumQuote" />
+
+    <TextView
+        android:id="@+id/currencyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/flag"
+        app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+        tools:text="@string/currencyName" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/USD" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabEUR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/EUR" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/GBP" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabJPY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/JPY" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCHF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/CHF" />
+    </com.google.android.material.tabs.TabLayout>
+
+    <ImageView
+        android:id="@+id/priceDown"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/minimumQuote"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceUp"
+        app:srcCompat="@drawable/price_down"
+        tools:srcCompat="@drawable/price_down" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
